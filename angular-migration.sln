@@ -1,0 +1,32 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.24720.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{66F49775-49CC-446A-9ADB-8E31E23F7AA5}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{CC27F639-EBFA-4A40-B017-BA56C75801B3}"
+	ProjectSection(SolutionItems) = preProject
+		global.json = global.json
+	EndProjectSection
+EndProject
+Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "angular-migration", "src\angular-migration\angular-migration.xproj", "{1271DC24-B6EC-431D-9EAA-522D82C22636}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{1271DC24-B6EC-431D-9EAA-522D82C22636}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1271DC24-B6EC-431D-9EAA-522D82C22636}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1271DC24-B6EC-431D-9EAA-522D82C22636}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1271DC24-B6EC-431D-9EAA-522D82C22636}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{1271DC24-B6EC-431D-9EAA-522D82C22636} = {66F49775-49CC-446A-9ADB-8E31E23F7AA5}
+	EndGlobalSection
+EndGlobal

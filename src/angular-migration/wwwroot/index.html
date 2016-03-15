@@ -1,0 +1,36 @@
+﻿<!doctype html>
+<html lang="en" ng-app="phonecatApp">
+<head>
+    <meta charset="utf-8">
+    <title>Google Phone Gallery</title>
+    <link rel="stylesheet" href="lib/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="css/app.css">
+    <link rel="stylesheet" href="css/animations.css">
+
+    <script src="lib/jquery/dist/jquery.js"></script>
+    <script src="lib/angular/angular.js"></script>
+    <script src="lib/angular-animate/angular-animate.js"></script>
+    <script src="lib/angular-route/angular-route.js"></script>
+    <script src="lib/angular-resource/angular-resource.js"></script>
+
+    <script src="app/app.module.js"></script>
+    <script src="app/core/core.module.js"></script>
+    <script src="app/core/phone.factory.js"></script>
+
+    <script src="app/phoneList/phoneList.module.js"></script>
+    <script src="app/phoneList/phoneList.component.js"></script>
+    <script src="app/phoneList/phoneList.controller.js"></script>
+
+    <script src="app/phoneDetail/phoneDetail.module.js"></script>
+    <script src="app/phoneDetail/phoneDetail.component.js"></script>
+    <script src="app/phoneDetail/phoneDetail.controller.js"></script>
+    
+</head>
+<body>
+
+    <div class="view-container">
+        <div ng-view class="view-frame"></div>
+    </div>
+
+</body>
+</html>
