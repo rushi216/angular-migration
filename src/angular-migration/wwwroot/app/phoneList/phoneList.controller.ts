@@ -1,9 +1,16 @@
-﻿PhoneListController.$inject = ['Phone'];
+﻿class PhoneListController {
+    phones: any[];
+    orderProp: string;
+    query: string;
+    constructor(Phone) {
+        Phone.getPhones().then((phones) => {
+            this.phones = phones
+        });
 
-function PhoneListController(Phone) {
-    var vm = this;
-    vm.phones = Phone.query();
-    vm.orderProp = 'age';
+        this.orderProp = 'age';
+    }
 }
+
+PhoneListController.$inject = ['Phone'];
 
 export default PhoneListController;

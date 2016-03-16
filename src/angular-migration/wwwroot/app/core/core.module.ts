@@ -2,4 +2,4 @@
 
 export default angular.module('phonecat.core',
     ['ngResource']).
-    factory('Phone', Phone);
+    service('Phone', Phone);
