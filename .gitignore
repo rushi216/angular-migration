@@ -211,6 +211,14 @@ GeneratedArtifacts/
 _Pvt_Extensions/
 ModelManifest.xml
 
-# wwwroot related
+# bower related
+src/angular-migration/wwwroot/lib 
 
-/src/angular-migration/wwwroot/lib 
+#typings related
+src/angular-migration/typings/**/*
+
+# typescript ignore .js and .js.map
+src/angular-migration/wwwroot/app/**/*.js
+src/angular-migration/wwwroot/app/*.js
+src/angular-migration/wwwroot/app/**/*.map
+src/angular-migration/wwwroot/app/*.map
