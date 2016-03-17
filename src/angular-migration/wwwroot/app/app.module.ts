@@ -2,9 +2,10 @@
 import phoneList from './phoneList/phoneList.module';
 import phoneDetail from './phoneDetail/phoneDetail.module';
 
-import {UpgradeAdapter} from 'angular2/upgrade';
+import upgradeAdapter from './core/upgradeAdapter';
+import {HTTP_PROVIDERS} from 'angular2/http';
 
-const upgradeAdapter = new UpgradeAdapter();
+upgradeAdapter.addProvider(HTTP_PROVIDERS);
 
 angular.module('phonecatApp', [
     'ngRoute',

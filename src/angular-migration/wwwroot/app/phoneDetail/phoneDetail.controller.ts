@@ -6,7 +6,8 @@ class PhoneDetailController {
     phone: any;
     mainImageUrl: string;
     constructor($routeParams: PhoneRouteParams, Phone) {
-        this.phone = Phone.get({ phoneId: $routeParams.phoneId }).then((phone) => {
+        Phone.getPhone({ phoneId: $routeParams.phoneId }).then((phone) => {
+            this.phone = phone;
             this.mainImageUrl = phone.images[0];
         });
     }
