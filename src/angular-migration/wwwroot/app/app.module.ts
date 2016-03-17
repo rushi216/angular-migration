@@ -2,6 +2,10 @@
 import phoneList from './phoneList/phoneList.module';
 import phoneDetail from './phoneDetail/phoneDetail.module';
 
+import {UpgradeAdapter} from 'angular2/upgrade';
+
+const upgradeAdapter = new UpgradeAdapter();
+
 angular.module('phonecatApp', [
     'ngRoute',
     core.name,
@@ -28,4 +32,4 @@ function configure($routeProvider) {
         });
 }
 
-angular.bootstrap(document.documentElement, ['phonecatApp']);
+upgradeAdapter.bootstrap(document.documentElement, ['phonecatApp']);
