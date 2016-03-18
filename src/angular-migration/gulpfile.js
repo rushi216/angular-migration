@@ -8,6 +8,7 @@ var gulp = require('gulp');
 
 gulp.task('default', function () {
     gulp.src([
+      'node_modules/systemjs/dist/system.js',
       'node_modules/angular2/bundles/angular2.dev.js',
       'node_modules/angular2/bundles/angular2-polyfills.js',
       'node_modules/angular2/bundles/http.dev.js',
