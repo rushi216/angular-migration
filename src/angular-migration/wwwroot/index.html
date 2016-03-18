@@ -8,45 +8,25 @@
     <link rel="stylesheet" href="css/animations.css">
 
     <script src="lib/system.js/dist/system.src.js"></script>
-    <script src="lib/jquery/dist/jquery.js"></script>
-    <script src="lib/angular/angular.js"></script>
-    <!--<script src="lib/angular-animate/angular-animate.js"></script>-->
-    <script src="lib/angular-route/angular-route.js"></script>
-    <script src="lib/angular-resource/angular-resource.js"></script>
-
-    <!--<script src="app/app.module.js"></script>
-    <script src="app/core/core.module.js"></script>
-    <script src="app/core/phone.factory.js"></script>
-
-    <script src="app/phoneList/phoneList.module.js"></script>
-    <script src="app/phoneList/phoneList.component.js"></script>
-    <script src="app/phoneList/phoneList.controller.js"></script>
-
-    <script src="app/phoneDetail/phoneDetail.module.js"></script>
-    <script src="app/phoneDetail/phoneDetail.component.js"></script>
-    <script src="app/phoneDetail/phoneDetail.controller.js"></script>-->
-
     <script src="lib/es6-shim.js"></script>
     <script src="lib/es6-promise.js"></script>
     <script src="lib/angular2-polyfills.js"></script>
     <script src="lib/Rx.js"></script>
-    <script src="lib/http.dev.js"></script>
     <script src="lib/angular2.dev.js"></script>
-    <script src="lib/upgrade.dev.js"></script>
+    <script src="lib/http.dev.js"></script>
+    <script src="lib/router.dev.js"></script>
 
     <script>
         System.config({
             packages: { 'app': { defaultExtension: 'js' } }
         });
-        System.import('app/app.module');
+        System.import('app/main');
     </script>
 
 </head>
 <body>
 
-    <div class="view-container">
-        <div ng-view class="view-frame"></div>
-    </div>
+    <pc-app></pc-app>
 
 </body>
 </html>

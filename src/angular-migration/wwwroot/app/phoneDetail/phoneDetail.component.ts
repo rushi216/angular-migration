@@ -1,9 +1,6 @@
 ﻿import {Component, Inject} from 'angular2/core';
+import {RouteParams} from 'angular2/router';
 import {Phones, Phone} from '../core/phones.service';
-
-interface PhoneRouteParams {
-    phoneId: string
-}
 
 @Component({
     selector: 'pc-phone-detail',
@@ -14,8 +11,8 @@ interface PhoneRouteParams {
 class PhoneDetail {
     phone: any;
     mainImageUrl: string;
-    constructor( @Inject('$routeParams') $routeParams: PhoneRouteParams, phones: Phones) {
-        phones.getPhone({ phoneId: $routeParams.phoneId }).then((phone) => {
+    constructor(params: RouteParams, phones: Phones) {
+        phones.getPhone({ phoneId: params.get("phoneId") }).then((phone) => {
             this.phone = phone;
             this.mainImageUrl = phone.images[0];
         });
