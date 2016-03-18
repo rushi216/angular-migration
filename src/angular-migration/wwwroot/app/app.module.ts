@@ -7,6 +7,8 @@ import {HTTP_PROVIDERS} from 'angular2/http';
 
 upgradeAdapter.addProvider(HTTP_PROVIDERS);
 
+upgradeAdapter.upgradeNg1Provider('$routeParams');
+
 angular.module('phonecatApp', [
     'ngRoute',
     core.name,
@@ -19,14 +21,10 @@ configure.$inject = ['$routeProvider'];
 function configure($routeProvider) {
     $routeProvider.
         when('/phones', {
-            templateUrl: 'app/phoneList/phoneList.html',
-            controller: 'phoneListController',
-            controllerAs: '$ctrl'
+            template: '<pc-phone-list>'
         }).
         when('/phones/:phoneId', {
-            templateUrl: 'app/phoneDetail/phoneDetail.html',
-            controller: 'phoneDetailController',
-            controllerAs: '$ctrl'
+            template: '<pc-phone-detail>'
         }).
         otherwise({
             redirectTo: '/phones'
